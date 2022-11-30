@@ -1,3 +1,4 @@
+## .NET
 
 * dotnet --info 
     * .NET SDK (reflecting any global.json)
@@ -38,5 +39,20 @@
 * dotnet run --project .\API\API.csproj
 * dotnet dev-certs https --trust
 
-* dotnet tool install --global dotnet-ef --version 7.0.0 
-* otnet ef database update --project .\API\API.csproj
+* dotnet tool install --global 
+    dotnet-ef --version 7.0.0 
+* dotnet ef database update --project .\API\API.csproj
+
+
+**Create migrations**
+* dotnet ef migrations add InitialCreate -o Data/Migrations --project .\API\API.csproj
+
+**Update Migrations**
+dotnet ef database update --project .\API\API.csproj
+
+## Angular
+
+npm install -g @angular/cli
+
+ng serve open
+
